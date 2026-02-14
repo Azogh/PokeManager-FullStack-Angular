@@ -1,49 +1,72 @@
-# Projeto de Cadastro de Pokémon
+# 🐉 PokeManager: Angular & Firebase CRUD System
 
-## Descrição
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white)](https://angular.io/)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Este projeto é um sistema de cadastro de Pokémon desenvolvido com Angular e Firebase. O objetivo é criar uma aplicação web onde os usuários podem gerenciar uma lista de Pokémon, realizar operações CRUD (Criar, Ler, Atualizar, Excluir), e interagir com uma API externa para gerar Pokémon aleatórios.
+---
 
-## Funcionalidades
+## 📝 Descrição / Description
 
-- **Cadastro e Listagem de Pokémon**: Adicione novos Pokémon, visualize a lista de Pokémon cadastrados, edite e exclua registros.
-- **Integração com API**: Consuma dados da PokéAPI para gerar informações sobre Pokémon aleatórios.
-- **Autenticação e Proteção de Rotas**: Use Firebase Authentication para login e proteção de rotas.
-- **Customização de Pipe**: Implementação de um pipe personalizado para for2.ação de textos.
+O **PokeManager** é uma aplicação web robusta desenvolvida para a disciplina de **Programação Orientada a Objetos II (POO2)**. O sistema demonstra a implementação de um ciclo completo de **CRUD** integrado ao **Firebase**, além do consumo dinâmico da **PokéAPI** para geração e catalogação de dados.
 
-## Tecnologias Utilizadas
+> *A Full Stack Angular application designed to manage a Pokémon database. It features a complete CRUD workflow, Firebase authentication, and real-time data persistence, leveraging the PokéAPI for dynamic content.*
 
-- **Angular**: Framework para desenvolvimento do frontend.
-- **Firebase**: Serviço de backend para autenticação e banco de dados.
-- **Angular Material**: Biblioteca de componentes UI para Angular.
-- **PokéAPI**: API externa para dados de Pokémon.
+---
 
-## Instalação
+## ✨ Funcionalidades / Features
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/Azogh/my-anime-list.git
+* **⚡ Integração com PokéAPI:** Geração aleatória de Pokémon através de requisições HTTP assíncronas.
+* **💾 Persistência Real-time:** Operações de Criar, Ler, Atualizar e Excluir (CRUD) integradas ao Firebase Firestore.
+* **🔐 Autenticação & Segurança:** Controle de acesso e proteção de rotas utilizando **Firebase Authentication**.
+* **🎨 UI/UX com Angular Material:** Interface moderna, responsiva e padronizada.
+* **🛠️ Custom Pipes:** Transformação de dados customizada para melhor legibilidade (Data Formatting).
 
-2. Instale as dependências:
-   ```bash
+---
+
+## 🛠️ Tecnologias / Tech Stack
+
+* **Framework:** Angular (v13+ ou conforme sua versão)
+* **Backend as a Service:** Firebase (Auth & Firestore)
+* **UI Library:** Angular Material
+* **External API:** [PokéAPI](https://pokeapi.co/)
+
+---
+
+## 🚀 Como Executar / Setup & Installation
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/Azogh/PokeManager-FullStack-Angular.git](https://github.com/Azogh/PokeManager-FullStack-Angular.git)
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
     npm install
+    ```
 
-3. Configure as credenciais do Firebase:
-- Crie um projeto no Firebase Console.
-- Adicione as credenciais ao arquivo src/environments/environment.ts.
+3.  **Configuração do Firebase:**
+    * Crie um projeto no [Firebase Console](https://console.firebase.google.com/).
+    * Adicione suas credenciais no arquivo `src/environments/environment.ts`.
 
-4. Inicie o servidor de desenvolvimento:
+4.  **Inicie o servidor de desenvolvimento:**
     ```bash
     ng serve
-    O projeto estará disponível em http://localhost:4200.
+    ```
+    Acesse em: `http://localhost:4200`
 
+---
 
-## USO 
-- **Página Inicial**: Visualize um Pokémon aleatório e gerencie a lista de Pokémon.
-- **CRUD**: Adicione, edite e exclua Pokémon da lista.
-- **Autenticação**: Faça login para acessar áreas protegidas da aplicação.
+## 📐 Estrutura Arquitetural
 
-## Estrutura do Projeto
-- **src/app/**: Contém todos os módulos, componentes e serviços do Angular.
-- **src/environments/**: Configurações de ambiente, incluindo as credenciais do Firebase.
-- **src/assets/**: Arquivos estáticos como imagens e estilos.
+O projeto segue os princípios de **Clean Code** e a estrutura modular do Angular:
+* `src/app/core`: Serviços de autenticação e guards de rotas.
+* `src/app/shared`: Pipes customizados e componentes reutilizáveis.
+* `src/app/features`: Módulos de cadastro e listagem de Pokémon.
+
+---
+
+## 👨‍💻 Autor
+**Andre Gustavo Ozga** *Estudante de Sistemas de Informação | Cybersecurity & Software Engineering*
+
+---
